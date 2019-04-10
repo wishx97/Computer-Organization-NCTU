@@ -2,8 +2,8 @@
 `timescale 1ns/1ps
 
 module alu(
-           //clk,           // system clock              (input)
-           //rst_n,         // negative reset            (input)
+           clk,           // system clock              (input)
+           rst_n,         // negative reset            (input)
            src1,          // 32 bits source 1          (input)
            src2,          // 32 bits source 2          (input)
            ALU_control,   // 4 bits ALU control input  (input)		  
@@ -13,8 +13,8 @@ module alu(
            overflow       // 1 bit overflow            (output)
            );
 
-//input           clk;
-//input           rst_n;
+input           clk;
+input           rst_n;
 input  [32-1:0] src1;
 input  [32-1:0] src2;
 input   [4-1:0] ALU_control;
@@ -67,7 +67,7 @@ assign set = (src1[31] ^ (~src2[31]) ^ carry_out[30]);
 
 always@(*) 
 begin
-	//if(rst_n) begin
+	if(rst_n) begin
 	   cout = 0;
 	   overflow = 0;
 	   result = 0;
@@ -81,7 +81,7 @@ begin
 	   else
 	      zero = 0;
 	   
-	// end
+	end
 	   
 end
 endmodule
