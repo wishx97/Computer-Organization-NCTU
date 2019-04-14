@@ -1,8 +1,8 @@
 # Computer Organization
 
-[![HitCount](http://hits.dwyl.io/wishx97/ComputerOrganization.svg)](http://hits.dwyl.io/wishx97/ComputerOrganization)
+[![HitCount](http://hits.dwyl.io/wishx97/Computer_Organization.svg)](http://hits.dwyl.io/wishx97/Computer_Organization)
 
-Labs in Computer Organization Course NCTU by 李毅郎 that build a CPU stimulator using Verilog. 
+Labs that build a CPU stimulator using Verilog. 
 
 ## Contents
 [Lab0 Design a simple marquee](https://github.com/wishx97/ComputerOrganization/tree/master/Lab0)<br />
